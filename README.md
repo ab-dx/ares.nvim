@@ -1,1 +1,3 @@
-# A Warm Neovim theme for the Warm-Blooded ⚔️
+# Ares.nvim
+
+## A Warm Neovim theme for the Warm-Blooded ⚔️
