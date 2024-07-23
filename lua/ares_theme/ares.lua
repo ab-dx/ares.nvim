@@ -123,7 +123,7 @@ local theme = lush(function(injected_functions)
     FloatFooter { FloatTitle },                                                            -- FloatFooter    xxx links to FloatTitle
     MasonHeader { FloatTitle },                                                            -- MasonHeader    xxx links to FloatTitle
     RedrawDebugNormal { gui = "reverse", },                                                -- RedrawDebugNormal xxx cterm=reverse gui=reverse
-    Underlined { gui = "underline", fg = "#26c485", },                                     -- Underlined     xxx cterm=underline gui=underline guifg=#26c485
+    Underlined { gui = "underline", fg = "#70a288", },                                     -- Underlined     xxx cterm=underline gui=underline guifg=#70a288
     Substitute { gui = "bold", bg = "#e77777", fg = "#1e1517", },                          -- Substitute     xxx cterm=bold gui=bold guifg=#1e1517 guibg=#e77777
     VisualNOS { fg = "#1b282c", },                                                         -- VisualNOS      xxx guifg=#1b282c
     Normal { bg = "#1e1517", fg = "#dadada", },                                            -- Normal         xxx guifg=#dadada guibg=#1e1517
@@ -261,7 +261,7 @@ local theme = lush(function(injected_functions)
     AerialPrivate { Comment },                                                             -- AerialPrivate  xxx links to Comment
     AerialProtected { Comment },                                                           -- AerialProtected xxx links to Comment
     TelescopeResultsComment { Comment },                                                   -- TelescopeResultsComment xxx links to Comment
-    sym "@variable.builtin" { fg = "#26c485", },                                           -- @variable.builtin xxx guifg=#26c485
+    sym "@variable.builtin" { fg = "#70a288", },                                           -- @variable.builtin xxx guifg=#70a288
     sym "@lsp.typemod.variable.defaultLibrary" { sym "@variable.builtin" },                -- @lsp.typemod.variable.defaultLibrary xxx links to @variable.builtin
     sym "@lsp.type.selfKeyword" { sym "@variable.builtin" },                               -- @lsp.type.selfKeyword xxx links to @variable.builtin
     sym "@variable.parameter" { fg = "#ef9474", },                                         -- @variable.parameter xxx guifg=#ef9474
@@ -313,7 +313,7 @@ local theme = lush(function(injected_functions)
     TelescopeResultsFunction { Function },                                                 -- TelescopeResultsFunction xxx links to Function
     TelescopeResultsField { Function },                                                    -- TelescopeResultsField xxx links to Function
     TelescopeResultsClass { Function },                                                    -- TelescopeResultsClass xxx links to Function
-    sym "@function.builtin" { fg = "#26c485", },                                           -- @function.builtin xxx guifg=#26c485
+    sym "@function.builtin" { fg = "#70a288", },                                           -- @function.builtin xxx guifg=#70a288
     sym "@lsp.typemod.function.global" { sym "@function.builtin" },                        -- @lsp.typemod.function.global xxx links to @function.builtin
     sym "@lsp.typemod.function.defaultLibrary" { sym "@function.builtin" },                -- @lsp.typemod.function.defaultLibrary xxx links to @function.builtin
     sym "@lsp.typemod.method.defaultLibrary" { sym "@function.builtin" },                  -- @lsp.typemod.method.defaultLibrary xxx links to @function.builtin
@@ -569,8 +569,8 @@ local theme = lush(function(injected_functions)
     LazyProgressDone { fg = "#9ac374", },                                                  -- LazyProgressDone xxx guifg=#9ac374
     LazyLocal { fg = "#ffd770", },                                                         -- LazyLocal      xxx guifg=#ffd770
     LazyValue { fg = "#9ac374", },                                                         -- LazyValue      xxx guifg=#9ac374
-    DashboardFooter { fg = "#26c485", },                                                   -- DashboardFooter xxx guifg=#26c485
-    DashboardHeader { fg = "#26c485", },                                                   -- DashboardHeader xxx guifg=#26c485
+    DashboardFooter { fg = "#70a288", },                                                   -- DashboardFooter xxx guifg=#70a288
+    DashboardHeader { fg = "#70a288", },                                                   -- DashboardHeader xxx guifg=#70a288
     GitSignsDelete { fg = "#e77777", },                                                    -- GitSignsDelete xxx guifg=#e77777
     StatusInactive { bg = "#68545b", fg = "#281e22", },                                    -- StatusInactive xxx guifg=#281e22 guibg=#68545b
     HeirlineInactive { StatusInactive },                                                   -- HeirlineInactive xxx links to StatusInactive
@@ -590,7 +590,7 @@ local theme = lush(function(injected_functions)
     sym "@literal.markdown" { fg = "#6d9f71", },                                           -- @literal.markdown xxx guifg=#6d9f71
     sym "@typeParameter" { fg = "#ffd770", },                                              -- @typeParameter xxx guifg=#ffd770
     sym "@struct" { fg = "#4fa9c6", },                                                     -- @struct        xxx guifg=#4fa9c6
-    sym "@regexp" { fg = "#26c485", },                                                     -- @regexp        xxx guifg=#26c485
+    sym "@regexp" { fg = "#70a288", },                                                     -- @regexp        xxx guifg=#70a288
     sym "@class" { fg = "#4fa9c6", },                                                      -- @class         xxx guifg=#4fa9c6
     sym "@annotation" { fg = "#ffd770", },                                                 -- @annotation    xxx guifg=#ffd770
     DapUIRestart { fg = "#ffd770", },                                                      -- DapUIRestart   xxx guifg=#ffd770
@@ -643,7 +643,7 @@ local theme = lush(function(injected_functions)
     sym "@text.math" { sym "@markup.math" },                                               -- @text.math     xxx links to @markup.math
     DashboardCenter { fg = "#4fa9c6", },                                                   -- DashboardCenter xxx guifg=#4fa9c6
     DashboardShortcut { fg = "#ffd770", },                                                 -- DashboardShortcut xxx guifg=#ffd770
-    DiffIndexLine { fg = "#26c485", },                                                     -- DiffIndexLine  xxx guifg=#26c485
+    DiffIndexLine { fg = "#70a288", },                                                     -- DiffIndexLine  xxx guifg=#70a288
     DiffLine { fg = "#dadada", },                                                          -- DiffLine       xxx guifg=#dadada
     DiffFile { fg = "#4fa9c6", },                                                          -- DiffFile       xxx guifg=#4fa9c6
     DiffNewFile { fg = "#6d9f71", },                                                       -- DiffNewFile    xxx guifg=#6d9f71
@@ -679,7 +679,7 @@ local theme = lush(function(injected_functions)
     sym "@modifier" { fg = "#ef9474", },                                                   -- @modifier      xxx guifg=#ef9474
     sym "@event" { fg = "#ef9474", },                                                      -- @event         xxx guifg=#ef9474
     sym "@enumMember" { fg = "#ef9474", },                                                 -- @enumMember    xxx guifg=#ef9474
-    sym "@enum" { fg = "#26c485", },                                                       -- @enum          xxx guifg=#26c485
+    sym "@enum" { fg = "#70a288", },                                                       -- @enum          xxx guifg=#70a288
     sym "@decorator" { fg = "#ef9474", },                                                  -- @decorator     xxx guifg=#ef9474
     sym "@comment.hint" { bg = "#9cbdc9", fg = "#1e1517", },                               -- @comment.hint  xxx guifg=#1e1517 guibg=#9cbdc9
     sym "@text.note" { sym "@comment.hint" },                                              -- @text.note     xxx links to @comment.hint
@@ -697,21 +697,21 @@ local theme = lush(function(injected_functions)
     sym "@text.title.5.markdown" { sym "@markup.heading.5.markdown" },                     -- @text.title.5.markdown xxx links to @markup.heading.5.markdown
     sym "@markup.heading.4.markdown" { gui = "bold", fg = "#6d9f71", },                    -- @markup.heading.4.markdown xxx cterm=bold gui=bold guifg=#6d9f71
     sym "@text.title.4.markdown" { sym "@markup.heading.4.markdown" },                     -- @text.title.4.markdown xxx links to @markup.heading.4.markdown
-    sym "@markup.heading.3.markdown" { gui = "bold", fg = "#26c485", },                    -- @markup.heading.3.markdown xxx cterm=bold gui=bold guifg=#26c485
+    sym "@markup.heading.3.markdown" { gui = "bold", fg = "#70a288", },                    -- @markup.heading.3.markdown xxx cterm=bold gui=bold guifg=#70a288
     sym "@text.title.3.markdown" { sym "@markup.heading.3.markdown" },                     -- @text.title.3.markdown xxx links to @markup.heading.3.markdown
     sym "@markup.heading.2.markdown" { gui = "bold", fg = "#4fa9c6", },                    -- @markup.heading.2.markdown xxx cterm=bold gui=bold guifg=#4fa9c6
     sym "@text.title.2.markdown" { sym "@markup.heading.2.markdown" },                     -- @text.title.2.markdown xxx links to @markup.heading.2.markdown
     sym "@markup.heading.1.markdown" { gui = "bold", fg = "#cd87ba", },                    -- @markup.heading.1.markdown xxx cterm=bold gui=bold guifg=#cd87ba
     sym "@text.title.1.markdown" { sym "@markup.heading.1.markdown" },                     -- @text.title.1.markdown xxx links to @markup.heading.1.markdown
     sym "@field.yaml" { fg = "#df8489", },                                                 -- @field.yaml    xxx guifg=#df8489
-    sym "@tag.attribute" { fg = "#26c485", },                                              -- @tag.attribute xxx guifg=#26c485
+    sym "@tag.attribute" { fg = "#70a288", },                                              -- @tag.attribute xxx guifg=#70a288
     sym "@tag.attribute.tsx" { gui = "italic", fg = "#cd87ba", },                          -- @tag.attribute.tsx xxx cterm=italic gui=italic guifg=#cd87ba
     sym "@constructor.tsx" { fg = "#cd87ba", },                                            -- @constructor.tsx xxx guifg=#cd87ba
     sym "@constructor.typescript" { fg = "#cd87ba", },                                     -- @constructor.typescript xxx guifg=#cd87ba
     sym "@property.toml" { fg = "#df8489", },                                              -- @property.toml xxx guifg=#df8489
-    sym "@type.rust" { fg = "#26c485", },                                                  -- @type.rust     xxx guifg=#26c485
+    sym "@type.rust" { fg = "#70a288", },                                                  -- @type.rust     xxx guifg=#70a288
     sym "@punctuation.special.rust" { fg = "#cd87ba", },                                   -- @punctuation.special.rust xxx guifg=#cd87ba
-    sym "@constant.rust" { fg = "#26c485", },                                              -- @constant.rust xxx guifg=#26c485
+    sym "@constant.rust" { fg = "#70a288", },                                              -- @constant.rust xxx guifg=#70a288
     sym "@constructor.lua" { fg = "#ef9474", },                                            -- @constructor.lua xxx guifg=#ef9474
     sym "@label.json" { fg = "#4fa9c6", },                                                 -- @label.json    xxx guifg=#4fa9c6
     sym "@type.css" { fg = "#ef9474", },                                                   -- @type.css      xxx guifg=#ef9474
@@ -720,7 +720,7 @@ local theme = lush(function(injected_functions)
     sym "@property.id.css" { fg = "#4fa9c6", },                                            -- @property.id.css xxx guifg=#4fa9c6
     sym "@property.class.css" { fg = "#ffd770", },                                         -- @property.class.css xxx guifg=#ffd770
     sym "@property.css" { fg = "#ef9474", },                                               -- @property.css  xxx guifg=#ef9474
-    sym "@number.css" { fg = "#26c485", },                                                 -- @number.css    xxx guifg=#26c485
+    sym "@number.css" { fg = "#70a288", },                                                 -- @number.css    xxx guifg=#70a288
     sym "@property.cpp" { fg = "#ef9474", },                                               -- @property.cpp  xxx guifg=#ef9474
     sym "@tag.delimiter" { fg = "#dadada", },                                              -- @tag.delimiter xxx guifg=#dadada
     sym "@markup.raw.block" { fg = "#dadada", },                                           -- @markup.raw.block xxx guifg=#dadada
