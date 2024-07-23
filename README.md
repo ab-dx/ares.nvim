@@ -17,21 +17,21 @@ Install via any package management system
 
 - Lazy.nvim
 
-```
-"rktjmp/lush.nvim",
-{"ab-dx/ares.nvim", name="ares", priority="1000"}
+```vim
+'rktjmp/lush.nvim',
+{'ab-dx/ares.nvim', name='ares', priority=1000}
 ```
 
 - paq-nvim
 
-```
+```vim
 require paq { 'rktjmp/lush.nvim' }
 require paq { 'ab-dx/ares.nvim' }
 ```
 
 - Packer
 
-```
+```vim
 use 'rktjmp/lush.nvim'
 use 'ab-dx/ares.nvim'
 ```
