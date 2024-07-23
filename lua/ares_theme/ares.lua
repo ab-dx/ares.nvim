@@ -24,7 +24,7 @@ local theme = lush(function(injected_functions)
     ErrorMsg { fg = "#df8489", },                                                          -- ErrorMsg       xxx guifg=#df8489
     NvimInvalidSpacing { ErrorMsg },                                                       -- NvimInvalidSpacing xxx links to ErrorMsg
     MasonError { ErrorMsg },                                                               -- MasonError     xxx links to ErrorMsg
-    IncSearch { bg = "#e8a1d7", fg = "#1e1517", },                                         -- IncSearch      xxx guifg=#1e1517 guibg=#e8a1d7
+    IncSearch { bg = "#efbde3", fg = "#1e1517", },                                         -- IncSearch      xxx guifg=#1e1517 guibg=#efbde3
     CurSearch { IncSearch },                                                               -- CurSearch      xxx links to IncSearch
     HopPreview { IncSearch },                                                              -- HopPreview     xxx links to IncSearch
     Search { bg = "#1b282c", },                                                            -- Search         xxx guibg=#1b282c
@@ -38,7 +38,7 @@ local theme = lush(function(injected_functions)
     LazyProgressTodo { LineNr },                                                           -- LazyProgressTodo xxx links to LineNr
     TelescopeResultsLineNr { LineNr },                                                     -- TelescopeResultsLineNr xxx links to LineNr
     CursorLineNr { fg = "#dadada", },                                                      -- CursorLineNr   xxx guifg=#dadada
-    Question { fg = "#e8a1d7", },                                                          -- Question       xxx guifg=#e8a1d7
+    Question { fg = "#efbde3", },                                                          -- Question       xxx guifg=#efbde3
     StatusLine { bg = "#281e22", fg = "#8b7079", },                                        -- StatusLine     xxx guifg=#8b7079 guibg=#281e22
     MsgSeparator { StatusLine },                                                           -- MsgSeparator   xxx links to StatusLine
     NeoTreeStatusLine { StatusLine },                                                      -- NeoTreeStatusLine xxx links to StatusLine
@@ -59,26 +59,26 @@ local theme = lush(function(injected_functions)
     UfoFoldedBg { Visual },                                                                -- UfoFoldedBg    xxx links to Visual
     UfoPreviewCursorLine { Visual },                                                       -- UfoPreviewCursorLine xxx links to Visual
     TelescopePreviewLine { Visual },                                                       -- TelescopePreviewLine xxx links to Visual
-    WarningMsg { fg = "#efcd43", },                                                        -- WarningMsg     xxx guifg=#efcd43
+    WarningMsg { fg = "#ffd770", },                                                        -- WarningMsg     xxx guifg=#ffd770
     MasonWarning { WarningMsg },                                                           -- MasonWarning   xxx links to WarningMsg
     WildMenu { bg = "#9cbdc9", fg = "#1e1517", },                                          -- WildMenu       xxx guifg=#1e1517 guibg=#9cbdc9
     Folded { fg = "#393337", },                                                            -- Folded         xxx guifg=#393337
     FoldColumn { fg = "#393337", },                                                        -- FoldColumn     xxx guifg=#393337
     CursorLineFold { FoldColumn },                                                         -- CursorLineFold xxx links to FoldColumn
-    DiffAdd { bg = "#84a860", fg = "#1e1517", },                                           -- DiffAdd        xxx guifg=#1e1517 guibg=#84a860
+    DiffAdd { bg = "#6d9f71", fg = "#1e1517", },                                           -- DiffAdd        xxx guifg=#1e1517 guibg=#6d9f71
     TelescopeResultsDiffAdd { DiffAdd },                                                   -- TelescopeResultsDiffAdd xxx links to DiffAdd
-    DiffChange { bg = "#dbbd53", fg = "#1e1517", },                                        -- DiffChange     xxx guifg=#1e1517 guibg=#dbbd53
+    DiffChange { bg = "#ffd770", fg = "#1e1517", },                                        -- DiffChange     xxx guifg=#1e1517 guibg=#ffd770
     sym "@diff.delta" { DiffChange },                                                      -- @diff.delta    xxx links to DiffChange
     TelescopeResultsDiffChange { DiffChange },                                             -- TelescopeResultsDiffChange xxx links to DiffChange
     DiffDelete { bg = "#df8489", fg = "#1e1517", },                                        -- DiffDelete     xxx guifg=#1e1517 guibg=#df8489
     sym "@diff.minus" { DiffDelete },                                                      -- @diff.minus    xxx links to DiffDelete
     TelescopeResultsDiffDelete { DiffDelete },                                             -- TelescopeResultsDiffDelete xxx links to DiffDelete
-    DiffText { bg = "#dbbd53", fg = "#1e1517", },                                          -- DiffText       xxx guifg=#1e1517 guibg=#dbbd53
+    DiffText { bg = "#ffd770", fg = "#1e1517", },                                          -- DiffText       xxx guifg=#1e1517 guibg=#ffd770
     Conceal { fg = "#68545b", },                                                           -- Conceal        xxx guifg=#68545b
     LazyDimmed { Conceal },                                                                -- LazyDimmed     xxx links to Conceal
     LazyProp { Conceal },                                                                  -- LazyProp       xxx links to Conceal
     SpellBad { gui = "undercurl", sp = "#e77777", },                                       -- SpellBad       xxx cterm=undercurl gui=undercurl guisp=#e77777
-    SpellCap { gui = "undercurl", sp = "#efcd43", },                                       -- SpellCap       xxx cterm=undercurl gui=undercurl guisp=#efcd43
+    SpellCap { gui = "undercurl", sp = "#ffd770", },                                       -- SpellCap       xxx cterm=undercurl gui=undercurl guisp=#ffd770
     SpellRare { gui = "undercurl", sp = "#9ac374", },                                      -- SpellRare      xxx cterm=undercurl gui=undercurl guisp=#9ac374
     SpellLocal { gui = "undercurl", sp = "#9cbdc9", },                                     -- SpellLocal     xxx cterm=undercurl gui=undercurl guisp=#9cbdc9
     Pmenu { bg = "#1a1113", fg = "#8b7079", },                                             -- Pmenu          xxx guifg=#8b7079 guibg=#1a1113
@@ -102,7 +102,7 @@ local theme = lush(function(injected_functions)
     LazyButton { CursorLine },                                                             -- LazyButton     xxx links to CursorLine
     UfoCursorFoldedLine { CursorLine },                                                    -- UfoCursorFoldedLine xxx links to CursorLine
     ColorColumn { bg = "#22191b", },                                                       -- ColorColumn    xxx guibg=#22191b
-    QuickFixLine { bg = "#efcd43", fg = "#1e1517", },                                      -- QuickFixLine   xxx guifg=#1e1517 guibg=#efcd43
+    QuickFixLine { bg = "#ffd770", fg = "#1e1517", },                                      -- QuickFixLine   xxx guifg=#1e1517 guibg=#ffd770
     NormalNC { bg = "#1a1113", fg = "#dadada", },                                          -- NormalNC       xxx guifg=#dadada guibg=#1a1113
     NormalFloat { bg = "#1a1113", fg = "#8b7079", },                                       -- NormalFloat    xxx guifg=#8b7079 guibg=#1a1113
     LazyNormal { NormalFloat },                                                            -- LazyNormal     xxx links to NormalFloat
@@ -123,16 +123,16 @@ local theme = lush(function(injected_functions)
     FloatFooter { FloatTitle },                                                            -- FloatFooter    xxx links to FloatTitle
     MasonHeader { FloatTitle },                                                            -- MasonHeader    xxx links to FloatTitle
     RedrawDebugNormal { gui = "reverse", },                                                -- RedrawDebugNormal xxx cterm=reverse gui=reverse
-    Underlined { gui = "underline", fg = "#4fad97", },                                     -- Underlined     xxx cterm=underline gui=underline guifg=#4fad97
+    Underlined { gui = "underline", fg = "#26c485", },                                     -- Underlined     xxx cterm=underline gui=underline guifg=#26c485
     Substitute { gui = "bold", bg = "#e77777", fg = "#1e1517", },                          -- Substitute     xxx cterm=bold gui=bold guifg=#1e1517 guibg=#e77777
     VisualNOS { fg = "#1b282c", },                                                         -- VisualNOS      xxx guifg=#1b282c
     Normal { bg = "#1e1517", fg = "#dadada", },                                            -- Normal         xxx guifg=#dadada guibg=#1e1517
     NvimSpacing { Normal },                                                                -- NvimSpacing    xxx links to Normal
     DapUIFrameName { Normal },                                                             -- DapUIFrameName xxx links to Normal
     TelescopeNormal { Normal },                                                            -- TelescopeNormal xxx links to Normal
-    Character { fg = "#84a860", },                                                         -- Character      xxx guifg=#84a860
+    Character { fg = "#6d9f71", },                                                         -- Character      xxx guifg=#6d9f71
     sym "@character" { Character },                                                        -- @character     xxx links to Character
-    Constant { fg = "#dbbd53", },                                                          -- Constant       xxx guifg=#dbbd53
+    Constant { fg = "#ffd770", },                                                          -- Constant       xxx guifg=#ffd770
     sym "@constant" { Constant },                                                          -- @constant      xxx links to Constant
     luaConstant { Constant },                                                              -- luaConstant    xxx links to Constant
     TelescopePreviewCharDev { Constant },                                                  -- TelescopePreviewCharDev xxx links to Constant
@@ -150,7 +150,7 @@ local theme = lush(function(injected_functions)
     TelescopeResultsNumber { Number },                                                     -- TelescopeResultsNumber xxx links to Number
     Boolean { fg = "#ef9474", },                                                           -- Boolean        xxx guifg=#ef9474
     sym "@boolean" { Boolean },                                                            -- @boolean       xxx links to Boolean
-    Float { fg = "#dbbd53", },                                                             -- Float          xxx guifg=#dbbd53
+    Float { fg = "#ffd770", },                                                             -- Float          xxx guifg=#ffd770
     sym "@number.float" { Float },                                                         -- @number.float  xxx links to Float
     Conditional { fg = "#cd87ba", },                                                       -- Conditional    xxx guifg=#cd87ba
     sym "@keyword.conditional" { Conditional },                                            -- @keyword.conditional xxx links to Conditional
@@ -186,7 +186,7 @@ local theme = lush(function(injected_functions)
     sym "@keyword.exception" { Exception },                                                -- @keyword.exception xxx links to Exception
     Include { fg = "#cd87ba", },                                                           -- Include        xxx guifg=#cd87ba
     sym "@keyword.import" { Include },                                                     -- @keyword.import xxx links to Include
-    PreProc { fg = "#dbbd53", },                                                           -- PreProc        xxx guifg=#dbbd53
+    PreProc { fg = "#ffd770", },                                                           -- PreProc        xxx guifg=#ffd770
     Define { fg = "#cd87ba", },                                                            -- Define         xxx guifg=#cd87ba
     Macro { fg = "#ef9474", },                                                             -- Macro          xxx guifg=#ef9474
     PreCondit { fg = "#4fa9c6", },                                                         -- PreCondit      xxx guifg=#4fa9c6
@@ -199,10 +199,10 @@ local theme = lush(function(injected_functions)
     DapUIType { Type },                                                                    -- DapUIType      xxx links to Type
     LspInfoFiletype { Type },                                                              -- LspInfoFiletype xxx links to Type
     NullLsInfoTitle { Type },                                                              -- NullLsInfoTitle xxx links to Type
-    Structure { fg = "#dbbd53", },                                                         -- Structure      xxx guifg=#dbbd53
+    Structure { fg = "#ffd770", },                                                         -- Structure      xxx guifg=#ffd770
     sym "@keyword.modifier" { Structure },                                                 -- @keyword.modifier xxx links to Structure
     luaTable { Structure },                                                                -- luaTable       xxx links to Structure
-    Typedef { fg = "#dbbd53", },                                                           -- Typedef        xxx guifg=#dbbd53
+    Typedef { fg = "#ffd770", },                                                           -- Typedef        xxx guifg=#ffd770
     sym "@keyword.type" { Typedef },                                                       -- @keyword.type  xxx links to Typedef
     Tag { fg = "#4fa9c6", },                                                               -- Tag            xxx guifg=#4fa9c6
     Special { fg = "#4fa9c6", },                                                           -- Special        xxx guifg=#4fa9c6
@@ -232,7 +232,7 @@ local theme = lush(function(injected_functions)
     DiagnosticFloatingError { DiagnosticError },                                           -- DiagnosticFloatingError xxx links to DiagnosticError
     DiagnosticVirtualTextError { DiagnosticError },                                        -- DiagnosticVirtualTextError xxx links to DiagnosticError
     DiagnosticSignError { DiagnosticError },                                               -- DiagnosticSignError xxx links to DiagnosticError
-    DiagnosticWarn { fg = "#efcd43", },                                                    -- DiagnosticWarn xxx guifg=#efcd43
+    DiagnosticWarn { fg = "#ffd770", },                                                    -- DiagnosticWarn xxx guifg=#ffd770
     DiagnosticFloatingWarn { DiagnosticWarn },                                             -- DiagnosticFloatingWarn xxx links to DiagnosticWarn
     DiagnosticVirtualTextWarn { DiagnosticWarn },                                          -- DiagnosticVirtualTextWarn xxx links to DiagnosticWarn
     DiagnosticSignWarn { DiagnosticWarn },                                                 -- DiagnosticSignWarn xxx links to DiagnosticWarn
@@ -261,15 +261,15 @@ local theme = lush(function(injected_functions)
     AerialPrivate { Comment },                                                             -- AerialPrivate  xxx links to Comment
     AerialProtected { Comment },                                                           -- AerialProtected xxx links to Comment
     TelescopeResultsComment { Comment },                                                   -- TelescopeResultsComment xxx links to Comment
-    sym "@variable.builtin" { fg = "#4fad97", },                                           -- @variable.builtin xxx guifg=#4fad97
+    sym "@variable.builtin" { fg = "#26c485", },                                           -- @variable.builtin xxx guifg=#26c485
     sym "@lsp.typemod.variable.defaultLibrary" { sym "@variable.builtin" },                -- @lsp.typemod.variable.defaultLibrary xxx links to @variable.builtin
     sym "@lsp.type.selfKeyword" { sym "@variable.builtin" },                               -- @lsp.type.selfKeyword xxx links to @variable.builtin
     sym "@variable.parameter" { fg = "#ef9474", },                                         -- @variable.parameter xxx guifg=#ef9474
     sym "@variable.parameter.builtin" { sym "@variable.parameter" },                       -- @variable.parameter.builtin xxx links to @variable.parameter
     sym "@parameter" { sym "@variable.parameter" },                                        -- @parameter     xxx links to @variable.parameter
-    sym "@module.builtin" { fg = "#dbbd53", },                                             -- @module.builtin xxx guifg=#dbbd53
+    sym "@module.builtin" { fg = "#ffd770", },                                             -- @module.builtin xxx guifg=#ffd770
     sym "@namespace.builtin" { sym "@module.builtin" },                                    -- @namespace.builtin xxx links to @module.builtin
-    String { fg = "#84a860", },                                                            -- String         xxx guifg=#84a860
+    String { fg = "#6d9f71", },                                                            -- String         xxx guifg=#6d9f71
     sym "@string" { String },                                                              -- @string        xxx links to String
     sym "@string.regexp" { String },                                                       -- @string.regexp xxx links to String
     sym "@string.special" { String },                                                      -- @string.special xxx links to String
@@ -285,12 +285,12 @@ local theme = lush(function(injected_functions)
     TelescopePreviewExecute { String },                                                    -- TelescopePreviewExecute xxx links to String
     sym "@string.escape" { fg = "#df8489", },                                              -- @string.escape xxx guifg=#df8489
     sym "@lsp.type.escapeSequence" { sym "@string.escape" },                               -- @lsp.type.escapeSequence xxx links to @string.escape
-    sym "@type.builtin" { fg = "#dbbd53", },                                               -- @type.builtin  xxx guifg=#dbbd53
+    sym "@type.builtin" { fg = "#ffd770", },                                               -- @type.builtin  xxx guifg=#ffd770
     sym "@lsp.typemod.class.defaultLibrary" { sym "@type.builtin" },                       -- @lsp.typemod.class.defaultLibrary xxx links to @type.builtin
     sym "@lsp.type.builtinType" { sym "@type.builtin" },                                   -- @lsp.type.builtinType xxx links to @type.builtin
     sym "@lsp.typemod.type.defaultLibrary" { sym "@type.builtin" },                        -- @lsp.typemod.type.defaultLibrary xxx links to @type.builtin
     sym "@lsp.typemod.enum.defaultLibrary" { sym "@type.builtin" },                        -- @lsp.typemod.enum.defaultLibrary xxx links to @type.builtin
-    sym "@attribute" { fg = "#dbbd53", },                                                  -- @attribute     xxx guifg=#dbbd53
+    sym "@attribute" { fg = "#ffd770", },                                                  -- @attribute     xxx guifg=#ffd770
     sym "@attribute.builtin" { sym "@attribute" },                                         -- @attribute.builtin xxx links to @attribute
     sym "@property" { fg = "#df8489", },                                                   -- @property      xxx guifg=#df8489
     sym "@lsp.type.property" { sym "@property" },                                          -- @lsp.type.property xxx links to @property
@@ -313,7 +313,7 @@ local theme = lush(function(injected_functions)
     TelescopeResultsFunction { Function },                                                 -- TelescopeResultsFunction xxx links to Function
     TelescopeResultsField { Function },                                                    -- TelescopeResultsField xxx links to Function
     TelescopeResultsClass { Function },                                                    -- TelescopeResultsClass xxx links to Function
-    sym "@function.builtin" { fg = "#4fad97", },                                           -- @function.builtin xxx guifg=#4fad97
+    sym "@function.builtin" { fg = "#26c485", },                                           -- @function.builtin xxx guifg=#26c485
     sym "@lsp.typemod.function.global" { sym "@function.builtin" },                        -- @lsp.typemod.function.global xxx links to @function.builtin
     sym "@lsp.typemod.function.defaultLibrary" { sym "@function.builtin" },                -- @lsp.typemod.function.defaultLibrary xxx links to @function.builtin
     sym "@lsp.typemod.method.defaultLibrary" { sym "@function.builtin" },                  -- @lsp.typemod.method.defaultLibrary xxx links to @function.builtin
@@ -337,9 +337,9 @@ local theme = lush(function(injected_functions)
     sym "@text.danger" { sym "@comment.error" },                                           -- @text.danger   xxx links to @comment.error
     sym "@comment.warning" { bg = "#faa27f", fg = "#1e1517", },                            -- @comment.warning xxx guifg=#1e1517 guibg=#faa27f
     sym "@text.warning" { sym "@comment.warning" },                                        -- @text.warning  xxx links to @comment.warning
-    sym "@comment.todo" { bg = "#efcd43", fg = "#1e1517", },                               -- @comment.todo  xxx guifg=#1e1517 guibg=#efcd43
+    sym "@comment.todo" { bg = "#ffd770", fg = "#1e1517", },                               -- @comment.todo  xxx guifg=#1e1517 guibg=#ffd770
     sym "@text.todo" { sym "@comment.todo" },                                              -- @text.todo     xxx links to @comment.todo
-    Todo { fg = "#efcd43", },                                                              -- Todo           xxx guifg=#efcd43
+    Todo { fg = "#ffd770", },                                                              -- Todo           xxx guifg=#ffd770
     luaTodo { Todo },                                                                      -- luaTodo        xxx links to Todo
     sym "@markup.strong" { gui = "bold", fg = "#dadada", },                                -- @markup.strong xxx cterm=bold gui=bold guifg=#dadada
     sym "@text.strong" { sym "@markup.strong" },                                           -- @text.strong   xxx links to @markup.strong
@@ -348,7 +348,7 @@ local theme = lush(function(injected_functions)
     sym "@text.strike" { sym "@markup.strikethrough" },                                    -- @text.strike   xxx links to @markup.strikethrough
     sym "@markup.heading" { gui = "bold", fg = "#dadada", },                               -- @markup.heading xxx cterm=bold gui=bold guifg=#dadada
     sym "@text.title" { sym "@markup.heading" },                                           -- @text.title    xxx links to @markup.heading
-    sym "@markup.link" { gui = "bold", fg = "#dbbd53", },                                  -- @markup.link   xxx cterm=bold gui=bold guifg=#dbbd53
+    sym "@markup.link" { gui = "bold", fg = "#ffd770", },                                  -- @markup.link   xxx cterm=bold gui=bold guifg=#ffd770
     sym "@text.reference" { sym "@markup.link" },                                          -- @text.reference xxx links to @markup.link
     Added { fg = "nvimlightgreen", },                                                      -- Added          xxx ctermfg=10 guifg=NvimLightGreen
     Removed { fg = "nvimlightred", },                                                      -- Removed        xxx ctermfg=9 guifg=NvimLightRed
@@ -368,7 +368,7 @@ local theme = lush(function(injected_functions)
     luaParenError { Error },                                                               -- luaParenError  xxx links to Error
     luaError { Error },                                                                    -- luaError       xxx links to Error
     DiagnosticUnderlineError { gui = "undercurl", sp = "#e77777", },                       -- DiagnosticUnderlineError xxx cterm=undercurl gui=undercurl guisp=#e77777
-    DiagnosticUnderlineWarn { gui = "undercurl", sp = "#efcd43", },                        -- DiagnosticUnderlineWarn xxx cterm=undercurl gui=undercurl guisp=#efcd43
+    DiagnosticUnderlineWarn { gui = "undercurl", sp = "#ffd770", },                        -- DiagnosticUnderlineWarn xxx cterm=undercurl gui=undercurl guisp=#ffd770
     DiagnosticUnderlineInfo { gui = "undercurl", sp = "#9cbdc9", },                        -- DiagnosticUnderlineInfo xxx cterm=undercurl gui=undercurl guisp=#9cbdc9
     DiagnosticUnderlineHint { gui = "undercurl", sp = "#88c3ab", },                        -- DiagnosticUnderlineHint xxx cterm=undercurl gui=undercurl guisp=#88c3ab
     DiagnosticUnderlineOk { gui = "undercurl", sp = "#9ac374", },                          -- DiagnosticUnderlineOk xxx cterm=undercurl gui=undercurl guisp=#9ac374
@@ -394,7 +394,7 @@ local theme = lush(function(injected_functions)
     TelescopePromptTitle { gui = "bold", bg = "#281e22", fg = "#9cbdc9", },                -- TelescopePromptTitle xxx cterm=bold gui=bold guifg=#9cbdc9 guibg=#281e22
     LazyCommitScope { gui = "italic", },                                                   -- LazyCommitScope xxx cterm=italic gui=italic
     LazyCommitType { gui = "bold", fg = "#9cbdc9", },                                      -- LazyCommitType xxx cterm=bold gui=bold guifg=#9cbdc9
-    LazyCommitIssue { fg = "#efcd43", },                                                   -- LazyCommitIssue xxx guifg=#efcd43
+    LazyCommitIssue { fg = "#ffd770", },                                                   -- LazyCommitIssue xxx guifg=#ffd770
     LazyCommit { gui = "bold", fg = "#68545b", },                                          -- LazyCommit     xxx cterm=bold gui=bold guifg=#68545b
     LazyH2 { gui = "bold", fg = "#9cbdc9", },                                              -- LazyH2         xxx cterm=bold gui=bold guifg=#9cbdc9
     LazyH1 { gui = "bold", bg = "#9cbdc9", fg = "#1e1517", },                              -- LazyH1         xxx cterm=bold gui=bold guifg=#1e1517 guibg=#9cbdc9
@@ -405,17 +405,17 @@ local theme = lush(function(injected_functions)
     NotifyINFOBody { bg = "#1a1113", fg = "#8b7079", },                                    -- NotifyINFOBody xxx guifg=#8b7079 guibg=#1a1113
     NotifyWARNBody { bg = "#1a1113", fg = "#8b7079", },                                    -- NotifyWARNBody xxx guifg=#8b7079 guibg=#1a1113
     NotifyERRORBody { bg = "#1a1113", fg = "#8b7079", },                                   -- NotifyERRORBody xxx guifg=#8b7079 guibg=#1a1113
-    NotifyTRACETitle { bg = "#1a1113", fg = "#e8a1d7", },                                  -- NotifyTRACETitle xxx guifg=#e8a1d7 guibg=#1a1113
+    NotifyTRACETitle { bg = "#1a1113", fg = "#efbde3", },                                  -- NotifyTRACETitle xxx guifg=#efbde3 guibg=#1a1113
     NotifyDEBUGTitle { bg = "#1a1113", fg = "#88c3ab", },                                  -- NotifyDEBUGTitle xxx guifg=#88c3ab guibg=#1a1113
     NotifyINFOTitle { bg = "#1a1113", fg = "#9ac374", },                                   -- NotifyINFOTitle xxx guifg=#9ac374 guibg=#1a1113
     NotifyWARNTitle { bg = "#1a1113", fg = "#faa27f", },                                   -- NotifyWARNTitle xxx guifg=#faa27f guibg=#1a1113
     NotifyERRORTitle { bg = "#1a1113", fg = "#e77777", },                                  -- NotifyERRORTitle xxx guifg=#e77777 guibg=#1a1113
-    NotifyTRACEIcon { bg = "#1a1113", fg = "#e8a1d7", },                                   -- NotifyTRACEIcon xxx guifg=#e8a1d7 guibg=#1a1113
+    NotifyTRACEIcon { bg = "#1a1113", fg = "#efbde3", },                                   -- NotifyTRACEIcon xxx guifg=#efbde3 guibg=#1a1113
     NotifyDEBUGIcon { bg = "#1a1113", fg = "#88c3ab", },                                   -- NotifyDEBUGIcon xxx guifg=#88c3ab guibg=#1a1113
     NotifyINFOIcon { bg = "#1a1113", fg = "#9ac374", },                                    -- NotifyINFOIcon xxx guifg=#9ac374 guibg=#1a1113
     NotifyWARNIcon { bg = "#1a1113", fg = "#faa27f", },                                    -- NotifyWARNIcon xxx guifg=#faa27f guibg=#1a1113
     NotifyERRORIcon { bg = "#1a1113", fg = "#e77777", },                                   -- NotifyERRORIcon xxx guifg=#e77777 guibg=#1a1113
-    NotifyTRACERBorder { bg = "#1a1113", fg = "#e8a1d7", },                                -- NotifyTRACERBorder xxx guifg=#e8a1d7 guibg=#1a1113
+    NotifyTRACERBorder { bg = "#1a1113", fg = "#efbde3", },                                -- NotifyTRACERBorder xxx guifg=#efbde3 guibg=#1a1113
     NotifyDEBUGBorder { bg = "#1a1113", fg = "#88c3ab", },                                 -- NotifyDEBUGBorder xxx guifg=#88c3ab guibg=#1a1113
     NotifyINFOBorder { bg = "#1a1113", fg = "#9ac374", },                                  -- NotifyINFOBorder xxx guifg=#9ac374 guibg=#1a1113
     NotifyWARNBorder { bg = "#1a1113", fg = "#faa27f", },                                  -- NotifyWARNBorder xxx guifg=#faa27f guibg=#1a1113
@@ -425,18 +425,18 @@ local theme = lush(function(injected_functions)
     HopNextKey2 { fg = "#9cbdc9", },                                                       -- HopNextKey2    xxx guifg=#9cbdc9
     HopNextKey1 { gui = "bold", fg = "#88c3ab", },                                         -- HopNextKey1    xxx cterm=bold gui=bold guifg=#88c3ab
     HopNextKey { gui = "bold", fg = "#e77777", },                                          -- HopNextKey     xxx cterm=bold gui=bold guifg=#e77777
-    StatusCommand { bg = "#efcd43", fg = "#281e22", },                                     -- StatusCommand  xxx guifg=#281e22 guibg=#efcd43
+    StatusCommand { bg = "#ffd770", fg = "#281e22", },                                     -- StatusCommand  xxx guifg=#281e22 guibg=#ffd770
     HeirlineCommand { StatusCommand },                                                     -- HeirlineCommand xxx links to StatusCommand
     StatusReplace { bg = "#e77777", fg = "#281e22", },                                     -- StatusReplace  xxx guifg=#281e22 guibg=#e77777
     HeirlineReplace { StatusReplace },                                                     -- HeirlineReplace xxx links to StatusReplace
-    StatusVisual { bg = "#e8a1d7", fg = "#281e22", },                                      -- StatusVisual   xxx guifg=#281e22 guibg=#e8a1d7
+    StatusVisual { bg = "#efbde3", fg = "#281e22", },                                      -- StatusVisual   xxx guifg=#281e22 guibg=#efbde3
     HeirlineVisual { StatusVisual },                                                       -- HeirlineVisual xxx links to StatusVisual
     WindowPickerWinBarNC { fg = "#e77777", },                                              -- WindowPickerWinBarNC xxx guifg=#e77777
     WindowPickerWinBar { fg = "#e77777", },                                                -- WindowPickerWinBar xxx guifg=#e77777
     WindowPickerStatusLineNC { fg = "#e77777", },                                          -- WindowPickerStatusLineNC xxx guifg=#e77777
     WindowPickerStatusLine { fg = "#e77777", },                                            -- WindowPickerStatusLine xxx guifg=#e77777
     WhichKeyGroup { fg = "#9cbdc9", },                                                     -- WhichKeyGroup  xxx guifg=#9cbdc9
-    WhichKeyDesc { fg = "#e8a1d7", },                                                      -- WhichKeyDesc   xxx guifg=#e8a1d7
+    WhichKeyDesc { fg = "#efbde3", },                                                      -- WhichKeyDesc   xxx guifg=#efbde3
     WhichKeySeparator { fg = "#393337", },                                                 -- WhichKeySeparator xxx guifg=#393337
     WhichKey { fg = "#88c3ab", },                                                          -- WhichKey       xxx guifg=#88c3ab
     MasonHeading { gui = "bold", },                                                        -- MasonHeading   xxx cterm=bold gui=bold
@@ -470,11 +470,11 @@ local theme = lush(function(injected_functions)
     IndentBlanklineContextStart { gui = "underline", fg = "#dadada", },                    -- IndentBlanklineContextStart xxx cterm=underline gui=underline guifg=#dadada
     IndentBlanklineChar { fg = "#393337", },                                               -- IndentBlanklineChar xxx guifg=#393337
     TodoBgBUG { gui = "bold", bg = "#e77777", fg = "#1e1517", },                           -- TodoBgBUG      xxx cterm=bold gui=bold guifg=#1e1517 guibg=#e77777
-    TodoBgHACK { gui = "bold", bg = "#efcd43", fg = "#1e1517", },                          -- TodoBgHACK     xxx cterm=bold gui=bold guifg=#1e1517 guibg=#efcd43
-    TodoBgWARNING { gui = "bold", bg = "#efcd43", fg = "#1e1517", },                       -- TodoBgWARNING  xxx cterm=bold gui=bold guifg=#1e1517 guibg=#efcd43
+    TodoBgHACK { gui = "bold", bg = "#ffd770", fg = "#1e1517", },                          -- TodoBgHACK     xxx cterm=bold gui=bold guifg=#1e1517 guibg=#ffd770
+    TodoBgWARNING { gui = "bold", bg = "#ffd770", fg = "#1e1517", },                       -- TodoBgWARNING  xxx cterm=bold gui=bold guifg=#1e1517 guibg=#ffd770
     TodoBgTODO { gui = "bold", bg = "#9cbdc9", fg = "#1e1517", },                          -- TodoBgTODO     xxx cterm=bold gui=bold guifg=#1e1517 guibg=#9cbdc9
     TodoBgNOTE { gui = "bold", bg = "#88c3ab", fg = "#1e1517", },                          -- TodoBgNOTE     xxx cterm=bold gui=bold guifg=#1e1517 guibg=#88c3ab
-    CmpItemKind { fg = "#dbbd53", },                                                       -- CmpItemKind    xxx guifg=#dbbd53
+    CmpItemKind { fg = "#ffd770", },                                                       -- CmpItemKind    xxx guifg=#ffd770
     CmpItemKindConstantDefault { CmpItemKind },                                            -- CmpItemKindConstantDefault xxx links to CmpItemKind
     CmpItemKindPropertyDefault { CmpItemKind },                                            -- CmpItemKindPropertyDefault xxx links to CmpItemKind
     CmpItemKindTypeParameterDefault { CmpItemKind },                                       -- CmpItemKindTypeParameterDefault xxx links to CmpItemKind
@@ -535,8 +535,8 @@ local theme = lush(function(injected_functions)
     NeoTreeNormalNC { bg = "#1a1113", fg = "#8b7079", },                                   -- NeoTreeNormalNC xxx guifg=#8b7079 guibg=#1a1113
     NeoTreeNormal { bg = "#1a1113", fg = "#8b7079", },                                     -- NeoTreeNormal  xxx guifg=#8b7079 guibg=#1a1113
     NeoTreeTitleBar { gui = "bold", bg = "#1a1113", fg = "#9cbdc9", },                     -- NeoTreeTitleBar xxx cterm=bold gui=bold guifg=#9cbdc9 guibg=#1a1113
-    NeoTreeGitUnstaged { fg = "#efcd43", },                                                -- NeoTreeGitUnstaged xxx guifg=#efcd43
-    NeoTreeGitUntracked { fg = "#efcd43", },                                               -- NeoTreeGitUntracked xxx guifg=#efcd43
+    NeoTreeGitUnstaged { fg = "#ffd770", },                                                -- NeoTreeGitUnstaged xxx guifg=#ffd770
+    NeoTreeGitUntracked { fg = "#ffd770", },                                               -- NeoTreeGitUntracked xxx guifg=#ffd770
     NeoTreeGitStaged { fg = "#88c3ab", },                                                  -- NeoTreeGitStaged xxx guifg=#88c3ab
     NeoTreeGitRenamed { fg = "#faa27f", },                                                 -- NeoTreeGitRenamed xxx guifg=#faa27f
     NeoTreeGitModified { fg = "#faa27f", },                                                -- NeoTreeGitModified xxx guifg=#faa27f
@@ -561,16 +561,16 @@ local theme = lush(function(injected_functions)
     LazyReasonFt { fg = "#88c3ab", },                                                      -- LazyReasonFt   xxx guifg=#88c3ab
     LazyReasonSource { fg = "#9ac374", },                                                  -- LazyReasonSource xxx guifg=#9ac374
     LazyReasonStart { fg = "#e77777", },                                                   -- LazyReasonStart xxx guifg=#e77777
-    LazyReasonKeys { fg = "#e8a1d7", },                                                    -- LazyReasonKeys xxx guifg=#e8a1d7
-    LazyReasonEvent { fg = "#efcd43", },                                                   -- LazyReasonEvent xxx guifg=#efcd43
+    LazyReasonKeys { fg = "#efbde3", },                                                    -- LazyReasonKeys xxx guifg=#efbde3
+    LazyReasonEvent { fg = "#ffd770", },                                                   -- LazyReasonEvent xxx guifg=#ffd770
     LazyReasonPlugin { fg = "#9cbdc9", },                                                  -- LazyReasonPlugin xxx guifg=#9cbdc9
-    LazyReasonRuntime { fg = "#efcd43", },                                                 -- LazyReasonRuntime xxx guifg=#efcd43
+    LazyReasonRuntime { fg = "#ffd770", },                                                 -- LazyReasonRuntime xxx guifg=#ffd770
     LazySpecial { fg = "#9cbdc9", },                                                       -- LazySpecial    xxx guifg=#9cbdc9
     LazyProgressDone { fg = "#9ac374", },                                                  -- LazyProgressDone xxx guifg=#9ac374
-    LazyLocal { fg = "#efcd43", },                                                         -- LazyLocal      xxx guifg=#efcd43
+    LazyLocal { fg = "#ffd770", },                                                         -- LazyLocal      xxx guifg=#ffd770
     LazyValue { fg = "#9ac374", },                                                         -- LazyValue      xxx guifg=#9ac374
-    DashboardFooter { fg = "#4fad97", },                                                   -- DashboardFooter xxx guifg=#4fad97
-    DashboardHeader { fg = "#4fad97", },                                                   -- DashboardHeader xxx guifg=#4fad97
+    DashboardFooter { fg = "#26c485", },                                                   -- DashboardFooter xxx guifg=#26c485
+    DashboardHeader { fg = "#26c485", },                                                   -- DashboardHeader xxx guifg=#26c485
     GitSignsDelete { fg = "#e77777", },                                                    -- GitSignsDelete xxx guifg=#e77777
     StatusInactive { bg = "#68545b", fg = "#281e22", },                                    -- StatusInactive xxx guifg=#281e22 guibg=#68545b
     HeirlineInactive { StatusInactive },                                                   -- HeirlineInactive xxx links to StatusInactive
@@ -587,22 +587,22 @@ local theme = lush(function(injected_functions)
     sym "@punctuation.delimiter" { fg = "#dadada", },                                      -- @punctuation.delimiter xxx guifg=#dadada
     sym "@punctuation.delimiter.markdown" { sym "@punctuation.delimiter" },                -- @punctuation.delimiter.markdown xxx links to @punctuation.delimiter
     sym "@none.markdown" { fg = "#dadada", },                                              -- @none.markdown xxx guifg=#dadada
-    sym "@literal.markdown" { fg = "#84a860", },                                           -- @literal.markdown xxx guifg=#84a860
-    sym "@typeParameter" { fg = "#dbbd53", },                                              -- @typeParameter xxx guifg=#dbbd53
+    sym "@literal.markdown" { fg = "#6d9f71", },                                           -- @literal.markdown xxx guifg=#6d9f71
+    sym "@typeParameter" { fg = "#ffd770", },                                              -- @typeParameter xxx guifg=#ffd770
     sym "@struct" { fg = "#4fa9c6", },                                                     -- @struct        xxx guifg=#4fa9c6
-    sym "@regexp" { fg = "#4fad97", },                                                     -- @regexp        xxx guifg=#4fad97
+    sym "@regexp" { fg = "#26c485", },                                                     -- @regexp        xxx guifg=#26c485
     sym "@class" { fg = "#4fa9c6", },                                                      -- @class         xxx guifg=#4fa9c6
-    sym "@annotation" { fg = "#dbbd53", },                                                 -- @annotation    xxx guifg=#dbbd53
-    DapUIRestart { fg = "#efcd43", },                                                      -- DapUIRestart   xxx guifg=#efcd43
+    sym "@annotation" { fg = "#ffd770", },                                                 -- @annotation    xxx guifg=#ffd770
+    DapUIRestart { fg = "#ffd770", },                                                      -- DapUIRestart   xxx guifg=#ffd770
     DapUIStop { fg = "#e77777", },                                                         -- DapUIStop      xxx guifg=#e77777
     DapUIPlayPause { fg = "#9ac374", },                                                    -- DapUIPlayPause xxx guifg=#9ac374
-    DapUIBreakpointsInfo { fg = "#e8a1d7", },                                              -- DapUIBreakpointsInfo xxx guifg=#e8a1d7
+    DapUIBreakpointsInfo { fg = "#efbde3", },                                              -- DapUIBreakpointsInfo xxx guifg=#efbde3
     DapUIWatchesError { fg = "#e77777", },                                                 -- DapUIWatchesError xxx guifg=#e77777
     DapUIWatchesValue { fg = "#faa27f", },                                                 -- DapUIWatchesValue xxx guifg=#faa27f
     DapUIWatchesEmpty { fg = "#e77777", },                                                 -- DapUIWatchesEmpty xxx guifg=#e77777
     sym "@markup.list.checked" { bg = "#9ac374", fg = "#1e1517", },                        -- @markup.list.checked xxx guifg=#1e1517 guibg=#9ac374
     sym "@text.checked" { sym "@markup.list.checked" },                                    -- @text.checked  xxx links to @markup.list.checked
-    sym "@markup.list.unchecked" { bg = "#e8a1d7", fg = "#1e1517", },                      -- @markup.list.unchecked xxx guifg=#1e1517 guibg=#e8a1d7
+    sym "@markup.list.unchecked" { bg = "#efbde3", fg = "#1e1517", },                      -- @markup.list.unchecked xxx guifg=#1e1517 guibg=#efbde3
     sym "@text.unchecked" { sym "@markup.list.unchecked" },                                -- @text.unchecked xxx links to @markup.list.unchecked
     DevIconLock { fg = "#bbbbbb", },                                                       -- DevIconLock    xxx ctermfg=250 guifg=#bbbbbb
     DevIconKotlin { fg = "#7f52ff", },                                                     -- DevIconKotlin  xxx ctermfg=99 guifg=#7f52ff
@@ -611,7 +611,7 @@ local theme = lush(function(injected_functions)
     DevIconJpg { fg = "#a074c4", },                                                        -- DevIconJpg     xxx ctermfg=140 guifg=#a074c4
     sym "@interface" { fg = "#ef9474", },                                                  -- @interface     xxx guifg=#ef9474
     sym "@lsp.type.interface" { sym "@interface" },                                        -- @lsp.type.interface xxx links to @interface
-    DapUIBreakpointsCurrentLine { gui = "bold", fg = "#efcd43", },                         -- DapUIBreakpointsCurrentLine xxx cterm=bold gui=bold guifg=#efcd43
+    DapUIBreakpointsCurrentLine { gui = "bold", fg = "#ffd770", },                         -- DapUIBreakpointsCurrentLine xxx cterm=bold gui=bold guifg=#ffd770
     AerialNormal { fg = "#8b7079", },                                                      -- AerialNormal   xxx guifg=#8b7079
     AerialArray { AerialNormal },                                                          -- AerialArray    xxx links to AerialNormal
     AerialBoolean { AerialNormal },                                                        -- AerialBoolean  xxx links to AerialNormal
@@ -642,22 +642,22 @@ local theme = lush(function(injected_functions)
     sym "@markup.math" { fg = "#4fa9c6", },                                                -- @markup.math   xxx guifg=#4fa9c6
     sym "@text.math" { sym "@markup.math" },                                               -- @text.math     xxx links to @markup.math
     DashboardCenter { fg = "#4fa9c6", },                                                   -- DashboardCenter xxx guifg=#4fa9c6
-    DashboardShortcut { fg = "#dbbd53", },                                                 -- DashboardShortcut xxx guifg=#dbbd53
-    DiffIndexLine { fg = "#4fad97", },                                                     -- DiffIndexLine  xxx guifg=#4fad97
+    DashboardShortcut { fg = "#ffd770", },                                                 -- DashboardShortcut xxx guifg=#ffd770
+    DiffIndexLine { fg = "#26c485", },                                                     -- DiffIndexLine  xxx guifg=#26c485
     DiffLine { fg = "#dadada", },                                                          -- DiffLine       xxx guifg=#dadada
     DiffFile { fg = "#4fa9c6", },                                                          -- DiffFile       xxx guifg=#4fa9c6
-    DiffNewFile { fg = "#84a860", },                                                       -- DiffNewFile    xxx guifg=#84a860
+    DiffNewFile { fg = "#6d9f71", },                                                       -- DiffNewFile    xxx guifg=#6d9f71
     DiffOldFile { fg = "#ef9474", },                                                       -- DiffOldFile    xxx guifg=#ef9474
     DiffChanged { fg = "#4fa9c6", },                                                       -- DiffChanged    xxx guifg=#4fa9c6
     DiffRemoved { fg = "#df8489", },                                                       -- DiffRemoved    xxx guifg=#df8489
-    DiffAdded { fg = "#84a860", },                                                         -- DiffAdded      xxx guifg=#84a860
+    DiffAdded { fg = "#6d9f71", },                                                         -- DiffAdded      xxx guifg=#6d9f71
     sym "@diff.plus" { DiffAdded },                                                        -- @diff.plus     xxx links to DiffAdded
     Italic { gui = "italic", },                                                            -- Italic         xxx cterm=italic gui=italic
     DapUIValue { fg = "#df8489", },                                                        -- DapUIValue     xxx guifg=#df8489
-    DapUIModifiedValue { gui = "bold", fg = "#efcd43", },                                  -- DapUIModifiedValue xxx cterm=bold gui=bold guifg=#efcd43
+    DapUIModifiedValue { gui = "bold", fg = "#ffd770", },                                  -- DapUIModifiedValue xxx cterm=bold gui=bold guifg=#ffd770
     DapUIDecoration { fg = "#393337", },                                                   -- DapUIDecoration xxx guifg=#393337
     IblScope { fg = "#8b7079", },                                                          -- IblScope       xxx guifg=#8b7079
-    DevIconLua { fg = "#51a0cf", },                                                        -- DevIconLua     xxx ctermfg=74 guifg=#51a0cf
+    DevIconLua { fg = "#56889f", },                                                        -- DevIconLua     xxx ctermfg=74 guifg=#56889f
     DevIconJpeg { fg = "#a074c4", },                                                       -- DevIconJpeg    xxx ctermfg=140 guifg=#a074c4
     DevIconHtml { fg = "#e44d26", },                                                       -- DevIconHtml    xxx ctermfg=196 guifg=#e44d26
     DevIconDockerfile { fg = "#458ee6", },                                                 -- DevIconDockerfile xxx ctermfg=68 guifg=#458ee6
@@ -672,14 +672,14 @@ local theme = lush(function(injected_functions)
     sym "@module.rust" { fg = "#cd87ba", },                                                -- @module.rust   xxx guifg=#cd87ba
     sym "@namespace.rust" { sym "@module.rust" },                                          -- @namespace.rust xxx links to @module.rust
     sym "@lsp.type.function.rust" { fg = "#dadada", },                                     -- @lsp.type.function.rust xxx guifg=#dadada
-    sym "@function.macro" { fg = "#dbbd53", },                                             -- @function.macro xxx guifg=#dbbd53
+    sym "@function.macro" { fg = "#ffd770", },                                             -- @function.macro xxx guifg=#ffd770
     sym "@function.macro.rust" { fg = "#df8489", },                                        -- @function.macro.rust xxx guifg=#df8489
     sym "@lsp.type.macro.rust" { sym "@function.macro.rust" },                             -- @lsp.type.macro.rust xxx links to @function.macro.rust
     sym "@lsp.typemod.function.defaultLibrary.rust" { fg = "#dadada", },                   -- @lsp.typemod.function.defaultLibrary.rust xxx guifg=#dadada
     sym "@modifier" { fg = "#ef9474", },                                                   -- @modifier      xxx guifg=#ef9474
     sym "@event" { fg = "#ef9474", },                                                      -- @event         xxx guifg=#ef9474
     sym "@enumMember" { fg = "#ef9474", },                                                 -- @enumMember    xxx guifg=#ef9474
-    sym "@enum" { fg = "#4fad97", },                                                       -- @enum          xxx guifg=#4fad97
+    sym "@enum" { fg = "#26c485", },                                                       -- @enum          xxx guifg=#26c485
     sym "@decorator" { fg = "#ef9474", },                                                  -- @decorator     xxx guifg=#ef9474
     sym "@comment.hint" { bg = "#9cbdc9", fg = "#1e1517", },                               -- @comment.hint  xxx guifg=#1e1517 guibg=#9cbdc9
     sym "@text.note" { sym "@comment.hint" },                                              -- @text.note     xxx links to @comment.hint
@@ -693,34 +693,34 @@ local theme = lush(function(injected_functions)
     sym "@text.environment.name" { sym "@markup.environment" },                            -- @text.environment.name xxx links to @markup.environment
     sym "@markup.quote" { gui = "italic", fg = "#dadada", },                               -- @markup.quote  xxx cterm=italic gui=italic guifg=#dadada
     sym "@text.quote" { sym "@markup.quote" },                                             -- @text.quote    xxx links to @markup.quote
-    sym "@markup.heading.5.markdown" { gui = "bold", fg = "#dbbd53", },                    -- @markup.heading.5.markdown xxx cterm=bold gui=bold guifg=#dbbd53
+    sym "@markup.heading.5.markdown" { gui = "bold", fg = "#ffd770", },                    -- @markup.heading.5.markdown xxx cterm=bold gui=bold guifg=#ffd770
     sym "@text.title.5.markdown" { sym "@markup.heading.5.markdown" },                     -- @text.title.5.markdown xxx links to @markup.heading.5.markdown
-    sym "@markup.heading.4.markdown" { gui = "bold", fg = "#84a860", },                    -- @markup.heading.4.markdown xxx cterm=bold gui=bold guifg=#84a860
+    sym "@markup.heading.4.markdown" { gui = "bold", fg = "#6d9f71", },                    -- @markup.heading.4.markdown xxx cterm=bold gui=bold guifg=#6d9f71
     sym "@text.title.4.markdown" { sym "@markup.heading.4.markdown" },                     -- @text.title.4.markdown xxx links to @markup.heading.4.markdown
-    sym "@markup.heading.3.markdown" { gui = "bold", fg = "#4fad97", },                    -- @markup.heading.3.markdown xxx cterm=bold gui=bold guifg=#4fad97
+    sym "@markup.heading.3.markdown" { gui = "bold", fg = "#26c485", },                    -- @markup.heading.3.markdown xxx cterm=bold gui=bold guifg=#26c485
     sym "@text.title.3.markdown" { sym "@markup.heading.3.markdown" },                     -- @text.title.3.markdown xxx links to @markup.heading.3.markdown
     sym "@markup.heading.2.markdown" { gui = "bold", fg = "#4fa9c6", },                    -- @markup.heading.2.markdown xxx cterm=bold gui=bold guifg=#4fa9c6
     sym "@text.title.2.markdown" { sym "@markup.heading.2.markdown" },                     -- @text.title.2.markdown xxx links to @markup.heading.2.markdown
     sym "@markup.heading.1.markdown" { gui = "bold", fg = "#cd87ba", },                    -- @markup.heading.1.markdown xxx cterm=bold gui=bold guifg=#cd87ba
     sym "@text.title.1.markdown" { sym "@markup.heading.1.markdown" },                     -- @text.title.1.markdown xxx links to @markup.heading.1.markdown
     sym "@field.yaml" { fg = "#df8489", },                                                 -- @field.yaml    xxx guifg=#df8489
-    sym "@tag.attribute" { fg = "#4fad97", },                                              -- @tag.attribute xxx guifg=#4fad97
+    sym "@tag.attribute" { fg = "#26c485", },                                              -- @tag.attribute xxx guifg=#26c485
     sym "@tag.attribute.tsx" { gui = "italic", fg = "#cd87ba", },                          -- @tag.attribute.tsx xxx cterm=italic gui=italic guifg=#cd87ba
     sym "@constructor.tsx" { fg = "#cd87ba", },                                            -- @constructor.tsx xxx guifg=#cd87ba
     sym "@constructor.typescript" { fg = "#cd87ba", },                                     -- @constructor.typescript xxx guifg=#cd87ba
     sym "@property.toml" { fg = "#df8489", },                                              -- @property.toml xxx guifg=#df8489
-    sym "@type.rust" { fg = "#4fad97", },                                                  -- @type.rust     xxx guifg=#4fad97
+    sym "@type.rust" { fg = "#26c485", },                                                  -- @type.rust     xxx guifg=#26c485
     sym "@punctuation.special.rust" { fg = "#cd87ba", },                                   -- @punctuation.special.rust xxx guifg=#cd87ba
-    sym "@constant.rust" { fg = "#4fad97", },                                              -- @constant.rust xxx guifg=#4fad97
+    sym "@constant.rust" { fg = "#26c485", },                                              -- @constant.rust xxx guifg=#26c485
     sym "@constructor.lua" { fg = "#ef9474", },                                            -- @constructor.lua xxx guifg=#ef9474
     sym "@label.json" { fg = "#4fa9c6", },                                                 -- @label.json    xxx guifg=#4fa9c6
     sym "@type.css" { fg = "#ef9474", },                                                   -- @type.css      xxx guifg=#ef9474
     sym "@type.tag.css" { fg = "#cd87ba", },                                               -- @type.tag.css  xxx guifg=#cd87ba
-    sym "@string.plain.css" { fg = "#84a860", },                                           -- @string.plain.css xxx guifg=#84a860
+    sym "@string.plain.css" { fg = "#6d9f71", },                                           -- @string.plain.css xxx guifg=#6d9f71
     sym "@property.id.css" { fg = "#4fa9c6", },                                            -- @property.id.css xxx guifg=#4fa9c6
-    sym "@property.class.css" { fg = "#dbbd53", },                                         -- @property.class.css xxx guifg=#dbbd53
+    sym "@property.class.css" { fg = "#ffd770", },                                         -- @property.class.css xxx guifg=#ffd770
     sym "@property.css" { fg = "#ef9474", },                                               -- @property.css  xxx guifg=#ef9474
-    sym "@number.css" { fg = "#4fad97", },                                                 -- @number.css    xxx guifg=#4fad97
+    sym "@number.css" { fg = "#26c485", },                                                 -- @number.css    xxx guifg=#26c485
     sym "@property.cpp" { fg = "#ef9474", },                                               -- @property.cpp  xxx guifg=#ef9474
     sym "@tag.delimiter" { fg = "#dadada", },                                              -- @tag.delimiter xxx guifg=#dadada
     sym "@markup.raw.block" { fg = "#dadada", },                                           -- @markup.raw.block xxx guifg=#dadada
@@ -943,7 +943,7 @@ local theme = lush(function(injected_functions)
     DevIconXlsx { fg = "#207245", },                                                       -- DevIconXlsx    xxx ctermfg=29 guifg=#207245
     DevIconCheckhealth { fg = "#75b4fb", },                                                -- DevIconCheckhealth xxx ctermfg=75 guifg=#75b4fb
     DevIconCMakeLists { fg = "#6d8086", },                                                 -- DevIconCMakeLists xxx ctermfg=66 guifg=#6d8086
-    DevIconNotebook { fg = "#51a0cf", },                                                   -- DevIconNotebook xxx ctermfg=74 guifg=#51a0cf
+    DevIconNotebook { fg = "#56889f", },                                                   -- DevIconNotebook xxx ctermfg=74 guifg=#56889f
     DevIconWebmanifest { fg = "#f1e05a", },                                                -- DevIconWebmanifest xxx ctermfg=185 guifg=#f1e05a
     DevIconJava { fg = "#cc3e44", },                                                       -- DevIconJava    xxx ctermfg=167 guifg=#cc3e44
     DevIconVimrc { fg = "#019833", },                                                      -- DevIconVimrc   xxx ctermfg=28 guifg=#019833
@@ -1233,7 +1233,7 @@ local theme = lush(function(injected_functions)
     DevIconPsd { fg = "#519aba", },                                                        -- DevIconPsd     xxx ctermfg=74 guifg=#519aba
     DevIconGitlabCI { fg = "#e24329", },                                                   -- DevIconGitlabCI xxx ctermfg=196 guifg=#e24329
     DevIconGradleWrapperProperties { fg = "#005f87", },                                    -- DevIconGradleWrapperProperties xxx ctermfg=24 guifg=#005f87
-    Stl51a0cf_1e1517_bolditalic_ { gui = "bold,italic", bg = "#1e1517", fg = "#51a0cf", }, -- Stl51a0cf_1e1517_bolditalic_ xxx cterm=bold,italic gui=bold,italic guifg=#51a0cf guibg=#1e1517
+    Stl56889f_1e1517_bolditalic_ { gui = "bold,italic", bg = "#1e1517", fg = "#56889f", }, -- Stl56889f_1e1517_bolditalic_ xxx cterm=bold,italic gui=bold,italic guifg=#56889f guibg=#1e1517
     Stl68545b_1e1517_bolditalic_ { gui = "bold,italic", bg = "#1e1517", fg = "#68545b", }, -- Stl68545b_1e1517_bolditalic_ xxx cterm=bold,italic gui=bold,italic guifg=#68545b guibg=#1e1517
     Stldadada_1e1517_bolditalic_ { gui = "bold,italic", bg = "#1e1517", fg = "#dadada", }, -- Stldadada_1e1517_bolditalic_ xxx cterm=bold,italic gui=bold,italic guifg=#dadada guibg=#1e1517
     Stle77777_1e1517_bolditalic_ { gui = "bold,italic", bg = "#1e1517", fg = "#e77777", }, -- Stle77777_1e1517_bolditalic_ xxx cterm=bold,italic gui=bold,italic guifg=#e77777 guibg=#1e1517
@@ -1241,11 +1241,11 @@ local theme = lush(function(injected_functions)
     Stl_281e22__ { bg = "#281e22", },                                                      -- Stl_281e22__   xxx guibg=#281e22
     Stl281e22_9cbdc9__ { bg = "#9cbdc9", fg = "#281e22", },                                -- Stl281e22_9cbdc9__ xxx guifg=#281e22 guibg=#9cbdc9
     Stl9cbdc9_281e22__ { bg = "#281e22", fg = "#9cbdc9", },                                -- Stl9cbdc9_281e22__ xxx guifg=#9cbdc9 guibg=#281e22
-    Stl51a0cf_281e22__ { bg = "#281e22", fg = "#51a0cf", },                                -- Stl51a0cf_281e22__ xxx guifg=#51a0cf guibg=#281e22
+    Stl56889f_281e22__ { bg = "#281e22", fg = "#56889f", },                                -- Stl56889f_281e22__ xxx guifg=#56889f guibg=#281e22
     Stl8b7079_281e22__ { bg = "#281e22", fg = "#8b7079", },                                -- Stl8b7079_281e22__ xxx guifg=#8b7079 guibg=#281e22
     Stl281e22_281e22__ { bg = "#281e22", fg = "#281e22", },                                -- Stl281e22_281e22__ xxx guifg=#281e22 guibg=#281e22
-    Stl84a860_281e22__ { bg = "#281e22", fg = "#84a860", },                                -- Stl84a860_281e22__ xxx guifg=#84a860 guibg=#281e22
-    Stldbbd53_281e22__ { bg = "#281e22", fg = "#dbbd53", },                                -- Stldbbd53_281e22__ xxx guifg=#dbbd53 guibg=#281e22
+    Stl6d9f71_281e22__ { bg = "#281e22", fg = "#6d9f71", },                                -- Stl6d9f71_281e22__ xxx guifg=#6d9f71 guibg=#281e22
+    Stlffd770_281e22__ { bg = "#281e22", fg = "#ffd770", },                                -- Stlffd770_281e22__ xxx guifg=#ffd770 guibg=#281e22
     sym "@ibl.indent.char.1" { gui = "nocombine", fg = "#393337", },                       -- @ibl.indent.char.1 xxx cterm=nocombine gui=nocombine guifg=#393337
     sym "@ibl.whitespace.char.1" { gui = "nocombine", fg = "#393337", },                   -- @ibl.whitespace.char.1 xxx cterm=nocombine gui=nocombine guifg=#393337
     sym "@ibl.scope.char.1" { gui = "nocombine", fg = "#8b7079", },                        -- @ibl.scope.char.1 xxx cterm=nocombine gui=nocombine guifg=#8b7079
@@ -1256,16 +1256,16 @@ local theme = lush(function(injected_functions)
     TodoBgFIX { gui = "bold", bg = "#e77777", fg = "#1e1517", },                           -- TodoBgFIX      xxx gui=bold guifg=#1e1517 guibg=#e77777
     TodoFgFIX { fg = "#e77777", },                                                         -- TodoFgFIX      xxx guifg=#e77777
     TodoSignFIX { fg = "#e77777", },                                                       -- TodoSignFIX    xxx guifg=#e77777
-    TodoBgWARN { gui = "bold", bg = "#efcd43", fg = "#1e1517", },                          -- TodoBgWARN     xxx gui=bold guifg=#1e1517 guibg=#efcd43
-    TodoFgWARN { fg = "#efcd43", },                                                        -- TodoFgWARN     xxx guifg=#efcd43
-    TodoSignWARN { fg = "#efcd43", },                                                      -- TodoSignWARN   xxx guifg=#efcd43
+    TodoBgWARN { gui = "bold", bg = "#ffd770", fg = "#1e1517", },                          -- TodoBgWARN     xxx gui=bold guifg=#1e1517 guibg=#ffd770
+    TodoFgWARN { fg = "#ffd770", },                                                        -- TodoFgWARN     xxx guifg=#ffd770
+    TodoSignWARN { fg = "#ffd770", },                                                      -- TodoSignWARN   xxx guifg=#ffd770
     TodoFgNOTE { fg = "#88c3ab", },                                                        -- TodoFgNOTE     xxx guifg=#88c3ab
     TodoSignNOTE { fg = "#88c3ab", },                                                      -- TodoSignNOTE   xxx guifg=#88c3ab
     TodoBgPERF { gui = "bold", bg = "#dadada", fg = "#1e1517", },                          -- TodoBgPERF     xxx gui=bold guifg=#1e1517 guibg=#dadada
     TodoFgPERF { fg = "#dadada", },                                                        -- TodoFgPERF     xxx guifg=#dadada
     TodoSignPERF { fg = "#dadada", },                                                      -- TodoSignPERF   xxx guifg=#dadada
-    TodoFgHACK { fg = "#efcd43", },                                                        -- TodoFgHACK     xxx guifg=#efcd43
-    TodoSignHACK { fg = "#efcd43", },                                                      -- TodoSignHACK   xxx guifg=#efcd43
+    TodoFgHACK { fg = "#ffd770", },                                                        -- TodoFgHACK     xxx guifg=#ffd770
+    TodoSignHACK { fg = "#ffd770", },                                                      -- TodoSignHACK   xxx guifg=#ffd770
     TodoBgTEST { gui = "bold", bg = "#dadada", fg = "#1e1517", },                          -- TodoBgTEST     xxx gui=bold guifg=#1e1517 guibg=#dadada
     TodoFgTEST { fg = "#dadada", },                                                        -- TodoFgTEST     xxx guifg=#dadada
     TodoSignTEST { fg = "#dadada", },                                                      -- TodoSignTEST   xxx guifg=#dadada
@@ -1277,7 +1277,7 @@ local theme = lush(function(injected_functions)
     CmpItemMenuDefault { fg = "#8b7079", },                                                -- CmpItemMenuDefault xxx guifg=#8b7079
     CmpItemMenu { CmpItemMenuDefault },                                                    -- CmpItemMenu    xxx links to CmpItemMenuDefault
     Stl8d8184_NONE__ { fg = "#8d8184", },                                                  -- Stl8d8184_NONE__ xxx guifg=#8d8184
-    Stlefcd43_281e22__ { bg = "#281e22", fg = "#efcd43", },                                -- Stlefcd43_281e22__ xxx guifg=#efcd43 guibg=#281e22
+    --Stlffd770_281e22__ { bg = "#281e22", fg = "#ffd770", },                                -- Stlffd770_281e22__ xxx guifg=#ffd770 guibg=#281e22
     NeoTreeMessage { gui = "italic", fg = "#3b2d31", },                                    -- NeoTreeMessage xxx gui=italic guifg=#3b2d31
     NeoTreeFadeText1 { fg = "#626262", },                                                  -- NeoTreeFadeText1 xxx guifg=#626262
     NeoTreeFadeText2 { fg = "#444444", },                                                  -- NeoTreeFadeText2 xxx guifg=#444444
@@ -1289,7 +1289,7 @@ local theme = lush(function(injected_functions)
     NeoTreeModified { fg = "#d7d787", },                                                   -- NeoTreeModified xxx guifg=#d7d787
     NeoTreeFileStats { fg = "#47373b", },                                                  -- NeoTreeFileStats xxx guifg=#47373b
     NeoTreeFileStatsHeader { gui = "bold", fg = "#616369", },                              -- NeoTreeFileStatsHeader xxx gui=bold guifg=#616369
-    Stl281e22_efcd43__ { bg = "#efcd43", fg = "#281e22", },                                -- Stl281e22_efcd43__ xxx guifg=#281e22 guibg=#efcd43
+    Stl281e22_ffd770__ { bg = "#ffd770", fg = "#281e22", },                                -- Stl281e22_ffd770__ xxx guifg=#281e22 guibg=#ffd770
     NotifyTRACEBorder { fg = "#4f3552", },                                                 -- NotifyTRACEBorder xxx guifg=#4f3552
     Stl63646a_281e22__ { bg = "#281e22", fg = "#63646a", },                                -- Stl63646a_281e22__ xxx guifg=#63646a guibg=#281e22
     Stl68545b_281e22__ { bg = "#281e22", fg = "#68545b", },                                -- Stl68545b_281e22__ xxx guifg=#68545b guibg=#281e22
