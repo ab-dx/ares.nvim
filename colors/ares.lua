@@ -14,7 +14,7 @@ vim.g.colors_name = "ares"
 --
 -- The performance impact of this call can be measured in the hundreds of
 -- *nanoseconds* and such could be considered "production safe".
-package.loaded["ares_theme.ares_template"] = nil
+package.loaded["ares_theme.ares"] = nil
 
 -- include our theme file and pass it to lush to apply
-require("lush")(require("ares_theme.ares_template"))
+require("lush")(require("ares_theme.ares"))
